@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        #div1 {
+            height: 120px;
+            width: 250px;
+            border: 5px black ridge;
+            background-color: aqua;
+            /* display: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <h1>This is my Header</h1>
+        <p>This is my paragramph</p>
+    </div>
+    <br>
+    <input type="button" value="Submit" id="Btn">
+    <script>
+        $(document).ready(function () {
+
+            $("#Btn").click(function () {
+                // $("#div1").fadeIn(3000, function () {
+                //     alert("Fade in Effect");
+                // });
+
+                // $("#div1").fadeOut(3000, function () {
+                //     alert("Fade out Effect");
+                // });
+
+                $("#div1").toggle();
+            });
+        });
+    </script>
+</body>
+
+</html>

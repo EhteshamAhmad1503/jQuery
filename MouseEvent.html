@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <title>Document</title>
+    <style>
+        .test {
+            background-color: aqua;
+            border: black solid;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Box" class="test">
+        <h1>This is header</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe eaque nam suscipit vero hic,
+            commodi
+            dolorem consectetur cum officia cupiditate amet possimus qui quasi quas nobis. Dolore, vel est.</p>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#Box").click(function () {
+                $("#Box").css('background-color', 'green')
+            });
+        });
+
+        $("#Box").dblclick(function () {
+            $("#Box").css('background-color', 'red')
+        });
+
+        $("#Box").contextmenu(function () {
+            $("#Box").css('background-color', 'blue')
+        });
+
+        $("#Box").mouseenter(function () {
+            $("#Box").css('background-color', 'tan')
+        });
+
+        $("#Box").mouseleave(function () {
+            $("#Box").css('background-color', 'purple');
+        });
+    </script>
+</body>
+
+</html>

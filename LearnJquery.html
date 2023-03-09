@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+
+    <p id="P1">Hello World</p>
+    <h1 class="C1">Welcome to hyderabad</h1>
+    <h1 class="C1">Welcome to JQuery</h1>
+    <input type="button" value="Hide" id="HideBtn">
+    <input type="button" value="Show" id="Showbtn">
+    <input type="button" value="Show And Hide " id="shbtn">
+    <!-- <p>Welcome to hyderabad</p> -->
+    <!-- <input type="button" value="Click" id="btn"> -->
+    <!-- <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("#P1").css("color", "blue");
+            });
+        });
+    </script> -->
+
+    <!-- <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $(".C1").css("font-size", "35px")
+            });
+        });
+    </script> -->
+
+    <!-- <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("p").css("font-family", "cooper")
+            });
+        });
+    </script> -->
+
+    <script>
+        $(document).ready(function () {
+            $("#HideBtn").click(function () {
+                $(".C1").hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#Showbtn").click(function () {
+                $(".C1").show();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#shbtn").click(function () {
+                $(".C1").toggle();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

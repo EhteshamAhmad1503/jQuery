@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        #Box {
+            background: pink;
+            padding: 10px;
+            order: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>THIS IS EHTESHAM AHMAD</h1>
+    <div id="Box">
+        <h1>Text Box</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae tempore corrupti aperiam consectetur,
+            harum totam laboriosam vero repellat hic perferendis adipisci dignissimos distinctio qui soluta
+            reprehenderit assumenda! Laborum reprehenderit nobis obcaecati soluta id iure est eligendi ab adipisci sit
+            aliquid consequuntur consectetur unde asperiores sapiente, esse quos perferendis magnam labore voluptates
+            neque vero? Repellat odio officiis laborum modi placeat accusantium, ullam magnam quidem fugit.</p>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('body').keypress(function () {
+                $(this).css('background-color', 'green');
+            });
+
+            $('body').keyup(function () {
+                $(this).css('background-color', 'tan');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>THIS IS EHTESHAM AHMAD</h1>
+    <form action="" id="Form">
+        <label for="">Name </label> <input type="text" id="SName"><br><br>
+        <label for="">Class </label> <input type="text" id="SClass"><br><br>
+
+        <label for="">Country</label>
+        <select id="Countries">
+            <option value="India">India</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Australia">Australia</option>
+        </select>
+        <br><br>
+        <input type="Submit">
+    </form>
+    <div id="test" style="border: 1px solid tan ;margin-top: 20px ;width: 100px; "></div>
+    <script>
+        $(document).ready(function () {
+            $("#SName,#SClass,#Countries").focus(function () {
+                $(this).css('background-color', 'lime')
+            });
+
+            $("#SName,#SClass,#Countries").blur(function () {
+                $(this).css('background-color', '')
+            });
+
+            $("#Countries").change(function () {
+                // $(this).css('background-color', 'pink')
+                var a = $(this).val();
+                $('#test').html(a);
+
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+
+    <select id="Countries">
+        <option value="-1">Select Country</option>
+        <option value="India">India</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Australia">Australia</option>
+    </select>
+
+    <input type="button" value="Submit" id="Btn">
+    <br>
+    <h1 id="result"></h1>
+    <!-- <input type="text" placeholder="Enter First Number" id="Num1">
+    <input type="text" placeholder="Enter Second Number" id="Num2">
+    <input type="button" value="Submit" id="addbtn">
+    <br>
+    <h1 id="result"></h1>
+
+    <script>
+        $(document).ready(function () {
+            $("#addbtn").click(function () {
+                var Num1 = $("#Num1").val();
+                var Num2 = $("#Num2").val();
+                if (Num1 == "" || Num2 == "") {
+                    alert("Please Enter Both Value");
+                }
+                else {
+                    var add = parseInt(Num1) + parseInt(Num2);
+                    // alert("Total Value is :" + add);
+                    $("#result").text("Total Value is :" + add);
+                }
+
+            });
+        });
+    </script> -->
+
+    <script>
+        $(document).ready(function () {
+            $("#Btn").click(function () {
+                var item = $("#Countries").val();
+                if (item == "-1") {
+                    alert("Please Select an Item");
+                }
+                else {
+
+                    $("#result").text("You have select :" + item);
+
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
